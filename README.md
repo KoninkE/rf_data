@@ -21,4 +21,6 @@ Total Number of Signals: 2025 (25 Signals Per Carrier x 9 Carrier Frequencies x 
 
 To generate the data set use the "Generate Radio Data Set.py" file and make sure to set the right file paths. This file generates all of the listed modulation types but the user provides a list of carrier frequencies to generate the data as well as the sample rate. The file's primary dependencies are "APSK.py", "FSK.py", and "radio_aid.py". The data provided should be byte arrays in the form of a bitstream.
 
+The provided data set does not include noise, although it's something that I would like to simulate in the near future along with channel effects such as multi-path fading, inter-symbol interference, gaussian noise, etc. I've provided a python script by the name of "channel_effects.py" of some functions that I have began to develop to model these channel effects.
+
 Feel free to reach out to me if you have any questions or concerns at the emails listed at the top.
